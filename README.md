@@ -1,2 +1,2 @@
 # My personal Website
-URL: [wangzongqi.com](wangzongqi.com)
+URL: [https://wangzongqi.com/](wangzongqi.com)
