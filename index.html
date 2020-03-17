@@ -6,6 +6,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- development version, includes helpful console warnings -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>	
+		<!-- production version, optimized for size and speed -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
 	</head>
 	<body class="is-preload">
 
@@ -21,7 +25,7 @@
 						<li><a href="#one" class="active">About Me</a></li>
 						<li><a href="#two">My Skills</a></li>
 						<li><a href="#three">My Work</a></li>
-						<li><a href="#four">My Portfolio</a></li>
+						<!-- <li><a href="#four">My Portfolio</a></li> -->
 					</ul>
 				</nav>
 				<footer>
@@ -49,7 +53,7 @@
 										<h2>Call Me Ced.</h2>
 										<p>Here are some things about me that you didn't want to know.</p>
 									</header>
-									<p>	My name is Zongqi, but you can call me Cedric. I chose the name Cedric to point out the ridiculousness of the English language; the two C's are pronouced differently. <br/><br/>
+									<p>	My name is Zongqi, but you can call me Cedric.  <br/><br/>
 										I have a degree in Data Science from Simon Fraser University. During my time in University, I took a breadth of courses including Biology, Chemistry, Business, Statistics, and, of course, Computer Science. <br/><br/>
 										I enjoy playing with new technologies, both software and hardware. My favorite linux distro is Manjaro.<br/><br/>
 										I also enjoy lifting heavy weights and cooking food. </p>
@@ -111,13 +115,20 @@
 							</section>
 
 						<!-- Four -->
-							<section id="four">
+							<!-- <section id="four">
 								<div class="container">
 									<h3>My entire portfolio</h3>
 									<p>This includes a comprehensive list of everything I've done in my professional and personal time.</p>
-
+									<div id="port">
+										<ul>
+											<li v-for="work in works">
+												<a v-bind:href="work.link">{{work.text}}</a>
+											</li>
+										</ul>
+									</div>
 								</div>
-							</section>
+								<script src="assets/js/vue/portfolio.js"></script>
+							</section> -->
 
 				<!-- Footer -->
 					<section id="footer">
