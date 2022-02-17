@@ -1,0 +1,76 @@
+.landing {
+	background-color: var(--bg-landing);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 95vh;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	z-index: -99;
+}
+
+.landing_right {
+	background-color: var(--light-blue);
+	width: 37.5%;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.blocks_container {
+	display: grid;
+	height: 50%;
+	background-color: red;
+	position: relative;
+	left: -50px;
+	top: 25%;
+}
+.yellow_blocks {
+	background: --var(--contrast-yellow);
+	box-shadow: --var(--blocks-shadow);
+	border-radius: 15px;
+}
+
+.landing_left {
+	position: relative;
+	display: flex;
+	width: 40vw;
+	height: 50vh;
+	margin-left: 10vw;
+	align-self: center;
+}
+
+.textblock {
+	display: flex;
+	flex-flow: column nowrap;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.textblock h1 {
+	font-size: 3.5rem;
+	font-weight: 500;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.linesep {
+	background-color: var(--light-blue);
+	width: 500px;
+	height: 5px;
+}
+
+.regtexth3 {
+	margin-left: 4vw;
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+.nameh1 {
+	color: var(--contrast-yellow);
+	margin-left: 8vw;
+}
+.jobtitle {
+	color: var(--light-blue);
+	margin-left: 8vw;
+}
