@@ -1,6 +1,9 @@
-$main-color: #ececec;
-$light-shadow: rgba(255, 255, 255,0.5);
-$dark-shadow: rgba(94, 104, 121, .288);
+$main-color: #e0e0e0;
+$main-color-ligher: #f2f2f2;
+// $light-shadow: rgba(255, 255, 255,0.5);
+// $dark-shadow: rgba(94, 104, 121, .288);
+$light-shadow: #ffffff;
+$dark-shadow: #bebebe;
 $font-color: #515152; 
 $font-color2: #142a52;
 $name-size-desktop: 34px;
@@ -87,8 +90,7 @@ $font-backup: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida San
                         max-width: 100px;
                         margin: 0 10% 0 10%;
                         padding: 10px 0px 0px 0px;
-                        box-shadow: -5px -5px 10px $light-shadow, 
-                        5px 5px 10px $dark-shadow;
+
                         border-radius: 15px;
                         text-align: center;
                         color: $font-color;
@@ -112,6 +114,10 @@ $font-backup: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida San
                     }
                     a:hover{
                         transform: scale(1.1, 1.1);
+                        box-shadow: -5px -5px 10px $light-shadow, 
+                        5px 5px 10px $dark-shadow;
+                        transition: transform 0.2s ease-in-out;
+                        transition: box-shadow 0.2s ease-in-out;
                     }
                     a::hover::after{
                         opacity:1;
@@ -125,19 +131,26 @@ $font-backup: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida San
             text-align: center;
             width:100%;
 
+            .section-header{
+                margin-top: 5vh;
+                margin-bottom: 0;
+            }
             ul{
                 padding: 0;
+                margin: 0;
                 list-style-type: none;
                 .achievements{
                     margin: 50px 20px 30px 20px;
                     // padding: 10px 10px 10px 10px;
                     min-height: 75px;
-                    box-shadow:  10px 10px 12px $dark-shadow, 
-                    -10px -10px 12px $light-shadow;
-                    border-radius: 10px;
+                    // box-shadow:  10px 10px 12px $dark-shadow, 
+                    // -10px -10px 12px $light-shadow;
+                    // border-radius: 10px;
                     text-align: center;
                     color: $font-color;
-                    
+                    cursor:pointer;
+
+
                     a:link, a:visited{
                         text-decoration: none;
                     }
@@ -188,7 +201,14 @@ $font-backup: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida San
                     transition:opacity 0.5s ease-in-out;
                 }
                 .achievements:hover{
-                    transform: scale(1.01, 1.01);
+                    // transform: scale(1.01, 1.01);
+                    box-shadow: 10px 10px 12px $dark-shadow,
+                    -10px -10px 12px $light-shadow;
+                    border-radius: 10px;                    
+                    background-color: #eaeaea;
+                    transition: transform 0.3s ease-in-out;
+                    transition: box-shadow 0.3s ease-in-out;
+                    transition: background-color 0.3, ease-in-out;
                 }
                 .achievements::hover::after{
                     opacity:1;
@@ -252,8 +272,8 @@ $font-backup: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida San
                         width: 100px;
                         margin: 0px 15px 0px 15px;
                         padding: 10px 0px 0px 0px;
-                        box-shadow: -5px -5px 10px $light-shadow, 
-                        5px 5px 10px $dark-shadow;
+                        // box-shadow: -5px -5px 10px $light-shadow, 
+                        // 5px 5px 10px $dark-shadow;
                         border-radius: 15px;
                         text-align: center;
                         color: $font-color;
@@ -276,6 +296,10 @@ $font-backup: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida San
                     }
                     a:hover{
                         transform: scale(1.1, 1.1);
+                        box-shadow: -5px -5px 10px $light-shadow, 
+                        5px 5px 10px $dark-shadow;
+                        transition: transform 0.2s ease-in-out;
+                        transition: box-shadow 0.2s ease-in-out;
                     }
                     a::hover::after{
                         opacity:1;
@@ -289,16 +313,22 @@ $font-backup: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida San
             text-align: center;
             width:100%;
 
+            .section-header{
+                margin-top: 4vh;
+                margin-bottom: 0;
+            }
+            
             ul{
                 display: flex;
                 flex-direction: column;
                 list-style-type: none;
                 padding: 0;
+                margin: 0;
                 .achievements{
                     margin: 20px 15px 20px 15px;
                     min-height: 75px;
-                    box-shadow:  10px 10px 12px $dark-shadow, 
-                    -10px -10px 12px $light-shadow;
+                    // box-shadow:  10px 10px 12px $dark-shadow, 
+                    // -10px -10px 12px $light-shadow;
                     border-radius: 10px;
                     text-align: center;
                     color: $font-color;
@@ -353,7 +383,13 @@ $font-backup: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida San
                     transition:opacity 0.5s ease-in-out;
                 }
                 .achievements:hover{
-                    transform: scale(1.01, 1.01);
+                    box-shadow: 10px 10px 12px $dark-shadow,
+                    -10px -10px 12px $light-shadow;
+                    border-radius: 10px;                    
+                    background-color: #eaeaea;
+                    transition: transform 0.3s ease-in-out;
+                    transition: box-shadow 0.3s ease-in-out;
+                    transition: background-color 0.3, ease-in-out;
                 }
                 .achievements::hover::after{
                     opacity:1;
@@ -466,6 +502,9 @@ $font-backup: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida San
             text-align: center;
             width:100%;
 
+            .section-header{
+                margin-top: 3vh;
+            }
             ul{
                 display: flex;
                 flex-direction: column;
